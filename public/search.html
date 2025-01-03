@@ -88,18 +88,14 @@
 
         if (page > 1) {
           const prevLink = document.createElement('a');
-          prevLink.href = `search.html?search=${encodeURIComponent(
-            query
-          )}&page=${page - 1}`;
+          prevLink.href = `search.html?search=${encodeURIComponent(query)}&page=${page - 1}`;
           prevLink.textContent = 'Previous';
           paginationDiv.appendChild(prevLink);
         }
 
         if (totalResults === numResults) {
           const nextLink = document.createElement('a');
-          nextLink.href = `search.html?search=${encodeURIComponent(
-            query
-          )}&page=${page + 1}`;
+          nextLink.href = `search.html?search=${encodeURIComponent(query)}&page=${page + 1}`;
           nextLink.textContent = 'Next';
           paginationDiv.appendChild(nextLink);
         }
@@ -126,6 +122,7 @@
             return;
           }
 
+          // Display results with title and description
           data.results.forEach((result) => {
             const resultDiv = document.createElement('div');
             resultDiv.classList.add('result');
@@ -133,15 +130,15 @@
             const titleLink = document.createElement('a');
             titleLink.classList.add('result-title');
             titleLink.href = result.url;
-            titleLink.textContent = result.title || result.url;
+            titleLink.textContent = result.title; // Display the title
 
             const urlDiv = document.createElement('div');
             urlDiv.classList.add('result-url');
-            urlDiv.textContent = result.url;
+            urlDiv.textContent = result.url; // Display the URL
 
             const descriptionDiv = document.createElement('div');
             descriptionDiv.classList.add('result-description');
-            descriptionDiv.textContent = result.description;
+            descriptionDiv.textContent = result.description || 'No description available'; // Display the description
 
             resultDiv.appendChild(titleLink);
             resultDiv.appendChild(urlDiv);

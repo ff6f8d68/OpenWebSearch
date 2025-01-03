@@ -1,0 +1,509 @@
+{
+  "crawledData": [
+    {
+      "url": "https://news.ycombinator.com/",
+      "title": "Hacker News",
+      "description": ""
+    },
+    {
+      "url": "https://pavelsevecek.github.io/",
+      "title": "OpenSPH",
+      "description": ""
+    },
+    {
+      "url": "https://blog.schwad.org/schwogs/6",
+      "title": "Schwog",
+      "description": ""
+    },
+    {
+      "url": "https://news.ycombinator.com",
+      "title": "Hacker News",
+      "description": ""
+    },
+    {
+      "url": "https://mathr.co.uk/blog/2021-05-14_deep_zoom_theory_and_practice.html",
+      "title": "Deep zoom theory and practice :: mathr",
+      "description": "\nPerturbation and rescaling for efficient rendering of fractal images.\n"
+    },
+    {
+      "url": "https://swungover.wordpress.com/2011/06/15/savoy-style-vs-hollywood-style-a-fight-to-the-death-hopefully/",
+      "title": "Savoy Style vs. Hollywood Style: A Fight to the Death (Hopefully?) – Swungover*",
+      "description": "As a professional dance instructor in the time of COVID-19, my income for at least five months of the year has been erased. If you read this article and find it useful or thought provoking, please consider a donation. You will be *literally* helping support an artist, and have my sincerest gratitude. This essay has…"
+    },
+    {
+      "url": "https://minimaxir.com/2025/01/write-better-code/",
+      "title": "Can LLMs write better code if you keep asking them to “write better code”? | Max Woolf's Blog",
+      "description": "Most coders want AI to write code faster: I want AI to write FASTER CODE."
+    },
+    {
+      "url": "https://github.com/PWCT/PWCT2",
+      "title": "GitHub - PWCT/PWCT2: Programming Without Coding Technology - Second Generation, written in the Ring programming language!",
+      "description": "Programming Without Coding Technology - Second Generation, written in the Ring programming language! - PWCT/PWCT2"
+    },
+    {
+      "url": "https://github.com/yibie/org-supertag",
+      "title": "GitHub - yibie/org-supertag: Enhance org-mode tag system, borrow idea from tana.",
+      "description": "Enhance org-mode tag system, borrow idea from tana. - yibie/org-supertag"
+    },
+    {
+      "url": "https://goodfuzzysounds.com/ma/docs/funnyversion.htm",
+      "title": "Simon Murphy - Film History MA Work, 2005 | Two Turntables and a\nMicrophone ",
+      "description": ""
+    },
+    {
+      "url": "https://www.usenix.org/publications/loginonline/evolution-sre-google",
+      "title": "The Evolution of SRE at Google | USENIX",
+      "description": ""
+    },
+    {
+      "url": "https://github.com/acaudwell/Gource",
+      "title": "GitHub - acaudwell/Gource: software version control visualization",
+      "description": "software version control visualization. Contribute to acaudwell/Gource development by creating an account on GitHub."
+    },
+    {
+      "url": "https://streamer.kuvasz.io/",
+      "title": "Kuvasz-streamer | Kuvasz-streamer is an open source change data capture (CDC) project that focuses exclusively on Postgres. It is tightly integrated with Postgres Logical Replication to provide high performance, low latency replication.LinkMenuExpand(external link)DocumentSearchCopyCopied",
+      "description": "Kuvasz-streamer is an open source change data capture (CDC) project that focuses exclusively on Postgres. It is tightly integrated with Postgres Logical Replication to provide high performance, low latency replication."
+    },
+    {
+      "url": "https://turbogist.dev",
+      "title": "Untitled",
+      "description": "Share code without leaving your editor"
+    },
+    {
+      "url": "https://wilsoniumite.com/2024/12/30/if-i-could-wave-a-magic-wand/",
+      "title": "If I Could Wave a Magic Wand – Wilsons Blog",
+      "description": ""
+    },
+    {
+      "url": "https://sites.pitt.edu/~jdnorton/Goodies/Dome/",
+      "title": "The Dome",
+      "description": ""
+    },
+    {
+      "url": "https://ssd.jpl.nasa.gov/horizons/",
+      "title": "Horizons System",
+      "description": ""
+    },
+    {
+      "url": "https://byroot.github.io/ruby/json/2024/12/29/optimizing-ruby-json-part-4.html",
+      "title": "Optimizing Ruby’s JSON, Part 4 | byroot’s blog",
+      "description": "In the previous post, we established that as long as ruby/json wasn’t competitive on micro-benchmarks, public perception wouldn’t change. Since what made ruby/json appear so bad on micro-benchmarks was its setup cost, we had to find ways to reduce it further."
+    },
+    {
+      "url": "https://words.filippo.io/dispatches/rsa-keygen-bench/",
+      "title": "Benchmarking RSA Key Generation",
+      "description": "RSA key generation is conceptually simple, but extremely tricky. Even benchmarking involves math: we generated a stable but representative “average case” instead of using the ordinary statistical approach."
+    },
+    {
+      "url": "https://www.peterzimon.com/hog/",
+      "title": "Shmøergh Hog",
+      "description": "The making of a simple analog synth"
+    },
+    {
+      "url": "https://refactoringenglish.com/chapters/rules-for-software-tutorials/",
+      "title": "Rules for Writing Software Tutorials · Refactoring English",
+      "description": "Effective writing for software developers"
+    },
+    {
+      "url": "https://aperiodical.com/2024/12/a-puzzle-about-a-calculator/",
+      "title": "A Puzzle about a Calculator | The Aperiodical",
+      "description": ""
+    },
+    {
+      "url": "https://tavianator.com/2025/shlx.html",
+      "title": "The Alder Lake SHLX anomaly - tavianator.com",
+      "description": ""
+    },
+    {
+      "url": "https://github.com/HackerNews/API",
+      "title": "GitHub - HackerNews/API: Documentation and Samples for the Official HN API",
+      "description": "Documentation and Samples for the Official HN API. Contribute to HackerNews/API development by creating an account on GitHub."
+    },
+    {
+      "url": "https://github.com/pavelsevecek",
+      "title": "pavelsevecek (Pavel) · GitHub",
+      "description": "pavelsevecek has 12 repositories available. Follow their code on GitHub."
+    },
+    {
+      "url": "https://www.ycombinator.com/apply/",
+      "title": "Apply to Y Combinator | Y CombinatorTwitterFacebookInstagramLinkedInYouTube",
+      "description": "To apply for the Y Combinator program, submit an application form.\nWe accept companies twice a year in two batches.\nThe program includes dinners every Tuesday, office hours with YC partners and access to the network of other YC founders.\nThe program culminates in Demo Day, where startups pitch to a carefully selected audience of investors."
+    },
+    {
+      "url": "https://gitlab.com/sevecekp/sph",
+      "title": "pavel / OpenSPH · GitLab",
+      "description": "Library and graphical tools for running SPH and N-body simulations."
+    },
+    {
+      "url": "https://sirrah.troja.mff.cuni.cz/~sevecek/spacesim_render.png",
+      "title": "Untitled",
+      "description": ""
+    },
+    {
+      "url": "https://sirrah.troja.mff.cuni.cz/~sevecek/spacesim.png",
+      "title": "Untitled",
+      "description": ""
+    },
+    {
+      "url": "https://blog.schwad.org/schwogs",
+      "title": "Schwog",
+      "description": ""
+    },
+    {
+      "url": "https://www.ruby-lang.org/en/",
+      "title": "Ruby Programming Language",
+      "description": ""
+    },
+    {
+      "url": "https://mini.schwad.org",
+      "title": "Mini Schwog",
+      "description": ""
+    },
+    {
+      "url": "https://bsky.app/profile/schwad.org",
+      "title": "@schwad.org on Bluesky",
+      "description": "Preeventualist. Rubyist at Shopify"
+    },
+    {
+      "url": "http://html5up.net",
+      "title": "HTML5 UP! Responsive HTML5 and CSS3 Site Templates",
+      "description": "Responsive HTML5 and CSS3 site templates designed by @ajlkn."
+    },
+    {
+      "url": "https://blog.schwad.org/feed",
+      "title": "SchwogIn Memoriam - Noah GibbsParty like it's 1979LifeFor all the best Schwogs go to IRBRuby pomodoro timer with exceptional tunesWhat is?",
+      "description": ""
+    },
+    {
+      "url": "https://www.rubykoans.com/",
+      "title": "Learn Ruby with the Edgecase Ruby Koans",
+      "description": "Learn Ruby with the Edgecase Ruby Koans"
+    },
+    {
+      "url": "https://github.com/scarpe-team/scarpe",
+      "title": "GitHub - scarpe-team/scarpe: Scarpe - shoes but running on webview",
+      "description": "Scarpe - shoes but running on webview. Contribute to scarpe-team/scarpe development by creating an account on GitHub."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=rxp2E0efspM",
+      "title": "RubyConf 2021 - Ruby Archaeology by Nick Schwaderer - YouTube",
+      "description": "Ruby Archaeology by Nick SchwadererIN 2009 _WHY TWEETED: \"PROGRAMMING IS RATHER THANKLESS. YOU SEE YOUR WORKS BECOME REPLACED BY SUPERIOR WORKS IN A YEAR. UN..."
+    },
+    {
+      "url": "https://github.com/scarpe-team",
+      "title": "scarpe-team · GitHub",
+      "description": "scarpe-team has 7 repositories available. Follow their code on GitHub."
+    },
+    {
+      "url": "https://github.com/scarpe-team/scarpe/wiki",
+      "title": "Home · scarpe-team/scarpe Wiki · GitHub",
+      "description": "Scarpe - shoes but running on webview. Contribute to scarpe-team/scarpe development by creating an account on GitHub."
+    },
+    {
+      "url": "https://github.com/scarpe-team/scarpe/blob/main/examples/highlander.rb",
+      "title": "scarpe/examples/highlander.rb at main · scarpe-team/scarpe · GitHub",
+      "description": "Scarpe - shoes but running on webview. Contribute to scarpe-team/scarpe development by creating an account on GitHub."
+    },
+    {
+      "url": "https://github.com/scarpe-team/bloopsaphone",
+      "title": "GitHub - scarpe-team/bloopsaphone: arcade sounds and chiptunes for ruby and c",
+      "description": "arcade sounds and chiptunes for ruby and c. Contribute to scarpe-team/bloopsaphone development by creating an account on GitHub."
+    },
+    {
+      "url": "https://codefol.io/posts/introducing-spaceshoes/",
+      "title": "Introducing SpaceShoes",
+      "description": ""
+    },
+    {
+      "url": "https://blog.schwad.org/schwogs?month=November+2024",
+      "title": "Schwog",
+      "description": ""
+    },
+    {
+      "url": "https://ncase.me/polygons/",
+      "title": "Parable of the Polygons - a playable post on the shape of society",
+      "description": "A playable post on how harmless choices can make a harmful world."
+    },
+    {
+      "url": "https://blog.schwad.org/schwogs?month=January+2025",
+      "title": "Schwog",
+      "description": ""
+    },
+    {
+      "url": "https://www.rubyvideo.dev/speakers/noah-gibbs",
+      "title": "Ruby Video | Conferences talks from Noah Gibbs",
+      "description": "Discover all the talks given by Noah Gibbs on subjects related to Ruby language or Ruby Frameworks such as Rails, Hanami and others"
+    },
+    {
+      "url": "https://codefol.io/posts",
+      "title": "Codefol.io, Latest Posts",
+      "description": ""
+    },
+    {
+      "url": "https://worrydream.com/LadderOfAbstraction/",
+      "title": "Up and Down the Ladder of Abstraction",
+      "description": ""
+    },
+    {
+      "url": "https://codefol.io/portfolio/",
+      "title": " Noah Gibbs - Portfolio ",
+      "description": "A portfolio of projects by Noah Gibbs"
+    },
+    {
+      "url": "https://google.com",
+      "title": "Google",
+      "description": ""
+    },
+    {
+      "url": "https://www.youtube.com/?tab=w1",
+      "title": "YouTube",
+      "description": "Auf YouTube findest du die angesagtesten Videos und Tracks. Außerdem kannst du eigene Inhalte hochladen und mit Freunden oder gleich der ganzen Welt teilen."
+    },
+    {
+      "url": "https://www.google.com/imghp?hl=de&tab=wi",
+      "title": "Google Bilder",
+      "description": "Google�Bilder, die umfassendste Bildersuche im Web"
+    },
+    {
+      "url": "https://google.com/preferences?hl=de",
+      "title": "Sucheinstellungen",
+      "description": ""
+    },
+    {
+      "url": "https://www.google.de/intl/de/about/products?tab=wh",
+      "title": "Alle Produkte und Dienste von Google ansehen - Google",
+      "description": "Hier finden Sie eine Liste von Google-Produkten für Arbeit und Freizeit, die Ihnen u. a. dabei helfen, den Überblick zu behalten, Antworten zu erhalten, in Kontakt zu bleiben und Ihr Unternehmen auf Erfolgskurs zu bringen."
+    },
+    {
+      "url": "https://play.google.com/?hl=de&tab=w8",
+      "title": "Android-Apps auf Google Play",
+      "description": "Viel Spaß mit Millionen aktueller Android-Apps, Spielen, Musik, Filmen, Serien, Büchern und Zeitschriften – jederzeit, überall und auf allen deinen Geräten."
+    },
+    {
+      "url": "http://www.google.de/history/optout?hl=de",
+      "title": "Google – Suchanpassung",
+      "description": ""
+    },
+    {
+      "url": "https://www.youtube.com/",
+      "title": "YouTube",
+      "description": "Auf YouTube findest du die angesagtesten Videos und Tracks. Außerdem kannst du eigene Inhalte hochladen und mit Freunden oder gleich der ganzen Welt teilen."
+    },
+    {
+      "url": "https://google.com/intl/de/policies/terms/",
+      "title": "Untitled",
+      "description": ""
+    },
+    {
+      "url": "https://google.com/intl/de/policies/privacy/",
+      "title": "Untitled",
+      "description": ""
+    },
+    {
+      "url": "https://google.com/services/",
+      "title": "Untitled",
+      "description": ""
+    },
+    {
+      "url": "https://www.google.com/setprefdomain?prefdom=DE&prev=https://www.google.de/&sig=K_7GSNd9BXzOgM7sFU-XyNZ8BXW8E%3D",
+      "title": "Google",
+      "description": ""
+    },
+    {
+      "url": "https://accounts.google.com/ServiceLogin?hl=de&passive=true&continue=https://www.google.com/&ec=GAZAAQ",
+      "title": "Anmelden – Google Konten",
+      "description": ""
+    },
+    {
+      "url": "https://google.com/intl/de/about.html",
+      "title": "Google - Alles über Google, unsere Unternehmenskultur und Neuigkeiten zum Unternehmen",
+      "description": "Hier können Sie sich über das Unternehmen, Produkte und Neuigkeiten informieren – mit Stories zu unserer Unternehmenskultur, unserer Philosophie und darüber, wie Menschen auf der ganzen Welt die Technologien von Google im Alltag nutzen."
+    },
+    {
+      "url": "https://google.com/advanced_search?hl=de&authuser=0",
+      "title": "Erweiterte Suche von Google",
+      "description": ""
+    },
+    {
+      "url": "https://google.com/intl/de/ads/",
+      "title": "\n      Google Ads - Get Customers and Sell More with Online Advertising\n    ",
+      "description": "Discover how online advertising with Google Ads can help grow your business. Get customers and sell more with our digital advertising platform."
+    },
+    {
+      "url": "https://www.youtube.com/ads/",
+      "title": "Werbekampagnen mit Onlinevideos - YouTube-Werbung",
+      "description": "Mit Onlinevideowerbung können Sie potenzielle Kaufinteressierte dort erreichen, wo sie sich Videos ansehen. Mit YouTube-Anzeigen lässt sich Ihr Umsatz steigern."
+    },
+    {
+      "url": "https://www.youtube.com/creators/",
+      "title": "\n      YouTube Creators - Education & Inspiration for Video Creators\n    ",
+      "description": "Explore YouTube Creators for everything you need to know about the video & content creator journey, and how to make the most of yours."
+    },
+    {
+      "url": "https://www.youtube.com/t/contact_us/",
+      "title": "Kontakt",
+      "description": ""
+    },
+    {
+      "url": "https://www.youtube.com/about/",
+      "title": "About YouTube - YouTube",
+      "description": "YouTube’s mission is to give everyone a voice and show them the world. Learn about our brand, community, careers and more."
+    },
+    {
+      "url": "https://www.youtube.com/about/copyright/",
+      "title": "YouTube-Richtlinien zu Urheberrechten und Fair Use - Wie funktioniert YouTube?",
+      "description": "Jeder hat Zugriff auf die YouTube-Tools zur Verwaltung von Urheberrechten. Damit können Rechteinhaber ihr urheberrechtlich geschütztes Material auf YouTube verwalten."
+    },
+    {
+      "url": "https://www.youtube.com/about/press/",
+      "title": "\n          \n            \n              YouTube Blog — Official Blog for Latest YouTube News & Insights\n            \n          \n          \n        ToggleToggleToggleToggleToggleToggleToggle",
+      "description": "Explore our official blog for the latest news about YouTube, creator and artist profiles, culture and trends analyses, and behind-the-scenes insights."
+    },
+    {
+      "url": "https://www.youtube.com/t/impressum?hl=de&gl=DE",
+      "title": "Impressum",
+      "description": ""
+    },
+    {
+      "url": "https://developers.google.com/youtube",
+      "title": "YouTube  |  Google for Developers",
+      "description": "Add YouTube functionality to your sites and apps."
+    },
+    {
+      "url": "https://www.youtube.com/?tab=i1",
+      "title": "YouTube",
+      "description": "Auf YouTube findest du die angesagtesten Videos und Tracks. Außerdem kannst du eigene Inhalte hochladen und mit Freunden oder gleich der ganzen Welt teilen."
+    },
+    {
+      "url": "https://www.youtube.com/about/policies/",
+      "title": "YouTube-Community-Richtlinien - Wie funktioniert YouTube?",
+      "description": "Die Community-Richtlinien wurden zum Schutz unserer Community erstellt und gelten für alle Inhalte auf YouTube."
+    },
+    {
+      "url": "https://www.youtube.com/howyoutubeworks?utm_campaign=ytgen&utm_source=ythp&utm_medium=LeftNav&utm_content=txt&u=https%3A%2F%2Fwww.youtube.com%2Fhowyoutubeworks%3Futm_source%3Dythp%26utm_medium%3DLeftNav%26utm_campaign%3Dytgen",
+      "title": "Wie funktioniert YouTube? – Produktfunktionen, Verantwortung und Auswirkungen",
+      "description": "Hier erfährst du mehr darüber, wie die YouTube-Produkte funktionieren und was wir zum Schutz unserer Community tun, um eine kreative, vielfältige und respektvolle Umgebung zu schaffen."
+    },
+    {
+      "url": "https://www.google.de/webhp?tab=iw",
+      "title": "Google",
+      "description": ""
+    },
+    {
+      "url": "https://www.youtube.com/t/privacy",
+      "title": "Datenschutzerklärung – Datenschutzerklärung & Nutzungsbedingungen – Google",
+      "description": ""
+    },
+    {
+      "url": "https://www.youtube.com/new",
+      "title": "Labs-Seite für YouTube",
+      "description": "Neue Testfunktionen ausprobieren Melde dich als Teilnehmer für Nutzerbefragungen an und sichere dir eine Prämie."
+    },
+    {
+      "url": "https://play.google.com/?hl=de&tab=i8",
+      "title": "Android-Apps auf Google Play",
+      "description": "Viel Spaß mit Millionen aktueller Android-Apps, Spielen, Musik, Filmen, Serien, Büchern und Zeitschriften – jederzeit, überall und auf allen deinen Geräten."
+    },
+    {
+      "url": "https://maps.google.de/maps?hl=de&tab=il",
+      "title": " Google Maps ",
+      "description": ""
+    },
+    {
+      "url": "https://www.google.com/preferences?hl=de",
+      "title": "Sucheinstellungen",
+      "description": ""
+    },
+    {
+      "url": "https://www.google.com/intl/de/policies/terms/",
+      "title": "Untitled",
+      "description": ""
+    },
+    {
+      "url": "https://www.google.com/services/",
+      "title": "Untitled",
+      "description": ""
+    },
+    {
+      "url": "https://www.google.com/intl/de/policies/privacy/",
+      "title": "Untitled",
+      "description": ""
+    },
+    {
+      "url": "https://www.google.de/intl/de/about/products?tab=ih",
+      "title": "Alle Produkte und Dienste von Google ansehen - Google",
+      "description": "Hier finden Sie eine Liste von Google-Produkten für Arbeit und Freizeit, die Ihnen u. a. dabei helfen, den Überblick zu behalten, Antworten zu erhalten, in Kontakt zu bleiben und Ihr Unternehmen auf Erfolgskurs zu bringen."
+    },
+    {
+      "url": "https://accounts.google.com/ServiceLogin?hl=de&passive=true&continue=https://www.google.com/imghp%3Fhl%3Dde%26tab%3Dwi&ec=GAZAAg",
+      "title": "Anmelden – Google Konten",
+      "description": ""
+    },
+    {
+      "url": "https://www.google.com/intl/de/about.html",
+      "title": "Google - Alles über Google, unsere Unternehmenskultur und Neuigkeiten zum Unternehmen",
+      "description": "Hier können Sie sich über das Unternehmen, Produkte und Neuigkeiten informieren – mit Stories zu unserer Unternehmenskultur, unserer Philosophie und darüber, wie Menschen auf der ganzen Welt die Technologien von Google im Alltag nutzen."
+    },
+    {
+      "url": "https://www.google.com/intl/de/ads/",
+      "title": "\n      Google Ads - Get Customers and Sell More with Online Advertising\n    ",
+      "description": "Discover how online advertising with Google Ads can help grow your business. Get customers and sell more with our digital advertising platform."
+    },
+    {
+      "url": "https://www.google.com/advanced_image_search?hl=de&authuser=0",
+      "title": "Erweiterte Bildersuche von Google",
+      "description": ""
+    },
+    {
+      "url": "https://support.google.com/accounts/answer/61416?hl=de",
+      "title": "Cookies aktivieren oder deaktivieren - Computer - Google-Konto-Hilfe",
+      "description": "Cookies speichern Browserinformationen, um Ihnen das Surfen im Internet zu erleichtern. Hier erfahren Sie, wie Sie Cookies im Google Chrome-Browser aktivieren oder deaktivieren."
+    },
+    {
+      "url": "https://support.google.com/",
+      "title": "Google Help",
+      "description": ""
+    },
+    {
+      "url": "https://workspace.google.com/blog/product-announcements/generative-ai",
+      "title": "Announcing new generative AI experiences in Google Workspace | Google Workspace Blog",
+      "description": "Google Workspace is using AI to become even more helpful, starting with new capabilities in Docs and Gmail to write and refine content."
+    },
+    {
+      "url": "https://google.com/url?q=https://policies.google.com/privacy%3Fhl%3Dde%26fg%3D1&opi=89978449&sa=U&ved=0ahUKEwiqwMyuodqKAxVrgf0HHTC1KmEQ8awCCAk&usg=AOvVaw3vTTm-1KdyBCvZ7gDD2SVN",
+      "title": "Datenschutzerklärung – Datenschutzerklärung & Nutzungsbedingungen – Google",
+      "description": ""
+    },
+    {
+      "url": "https://google.com/url?q=/safesearch%3Fhl%3Dde%26prev%3Dhttps://www.google.com/preferences%3Fhl%253Dde&opi=89978449&sa=U&ved=0ahUKEwiqwMyuodqKAxVrgf0HHTC1KmEQ1fMKCAM&usg=AOvVaw3umk3fK4de12L4cVBfcRGU",
+      "title": "Meine SafeSearch-Einstellungen",
+      "description": ""
+    },
+    {
+      "url": "https://support.google.com/websearch/?p=display_language&utm_source=google&utm_medium=pref-page&hl=de",
+      "title": "Sprache der Benutzeroberfläche auf Google ändern - Android - Google Suche-Hilfe",
+      "description": "Sie können Ihre bevorzugte Sprache für Schaltflächen und anderen Anzeigetext festlegen, die in der Google Suche angezeigt werden. Tipp: Die Sprache der Suchergebnisse wird dadurch nicht geändert. In"
+    },
+    {
+      "url": "https://google.com/url?q=https://policies.google.com/terms%3Fhl%3Dde%26fg%3D1&opi=89978449&sa=U&ved=0ahUKEwiqwMyuodqKAxVrgf0HHTC1KmEQ8qwCCAo&usg=AOvVaw1HOGtlV2fUfC-bHDQ6Us_w",
+      "title": "Google-Nutzungsbedingungen – Datenschutzerklärung & Nutzungsbedingungen – Google",
+      "description": ""
+    },
+    {
+      "url": "https://google.com/url?q=https://myactivity.google.com/product/search/controls%3Futm_source%3Dgoogle%26utm_medium%3Dpref-page%26hl%3Dde%26authuser%3D0&opi=89978449&sa=U&ved=0ahUKEwiqwMyuodqKAxVrgf0HHTC1KmEQ7JsICAE&usg=AOvVaw1q2sdZbaCekE7IyHu25SHu",
+      "title": "Welcome to My Activity",
+      "description": ""
+    },
+    {
+      "url": "https://google.com/url?q=https://support.google.com/websearch/%3Fp%3Dws_results_help%26hl%3Dde%26fg%3D1&opi=89978449&sa=U&ved=0ahUKEwiqwMyuodqKAxVrgf0HHTC1KmEQ8KwCCAg&usg=AOvVaw0KGqp1s_ZkYaU0OLW9Qyrl",
+      "title": "Google Suche-Hilfe",
+      "description": "Offizielle Hilfe für die Google Google Suche. Lernen Sie, wie Sie die Google Websuche optimal für sich nutzen."
+    },
+    {
+      "url": "https://google.com/url?q=/setting/search/privateresults%3Fhl%3Dde%26authuser%3D0&opi=89978449&sa=U&ved=0ahUKEwiqwMyuodqKAxVrgf0HHTC1KmEQ-vUJCAI&usg=AOvVaw1ZQJ0zhDJbTlCEmwJyD3WN",
+      "title": "Anmelden – Google Konten",
+      "description": ""
+    }
+  ]
+}
