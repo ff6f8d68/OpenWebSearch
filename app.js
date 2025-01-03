@@ -130,7 +130,7 @@ async function crawl(queue, crawlLimit = CRAWL_LIMIT) {
 // Save crawler data to a file
 function saveData() {
     const data = { crawledData }; // Now uses the globally defined crawledData
-    fs.writeFileSync(DATA_FILE, JSON.stringify(data, null, 2));
+    fs.promises.writeFile(DATA_FILE, JSON.stringify(data, null, 2));
     console.log('Data saved to file.');
 }
 

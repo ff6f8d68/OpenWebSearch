@@ -114,24 +114,6 @@ button:disabled {
   gap: 2.5rem;
 }
 
-.search-form-input {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  border: 1px solid #dfe1e5;
-  border-radius: 30px;
-  padding: 0.3rem 1.5rem;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.search-form input {
-  width: 27rem;
-  padding: 0.5rem;
-  border: none;
-  outline: none;
-}
-
 .buttons {
   display: flex;
   gap: 1rem;
@@ -182,23 +164,34 @@ button:disabled {
 .bottom-section a {
   color: #70757a;
 }
-
-.search-form button {
-  background-color: #f8f9fa;
-  border: 1px solid #f8f9fa;
-  border-radius: 4px;
-  color: #3c4043;
-  font-family: Roboto, arial, sans-serif;
+input {
+  width: 27rem;
+  padding: 0.5rem;
+  border: 1px solid #dfe1e5;
+  border-radius: 30px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  outline: none;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  margin: 11px 4px;
-  padding: 0 16px;
-  line-height: 27px;
-  height: 36px;
-  min-width: 54px;
-  text-align: center;
-  cursor: pointer;
-  user-select: none;
+  color: #202124;
 }
+
+input:focus {
+  border-color: #1a0dab;
+  box-shadow: 0px 2px 4px rgba(26, 13, 171, 0.2);
+}
+
+input::placeholder {
+  color: #a0a0a0;
+  font-size: 14px;
+}
+
+input[type="text"] {
+  width: 100%;
+}
+
+
+
 
 .bottom-section {
   display: flex;
