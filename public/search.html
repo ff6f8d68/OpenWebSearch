@@ -4,6 +4,28 @@
     <meta charset="UTF-8" />
     <title>Open Web Search</title>
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Spinner Style */
+      .spinner {
+        border: 4px solid #f3f3f3;
+        border-top: 4px solid #3498db;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        animation: spin 1s linear infinite;
+        display: none;
+        margin: 20px auto;
+      }
+
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+
+      .loading {
+        display: block;
+      }
+    </style>
   </head>
   <body>
     <div class="search-result-area">
@@ -26,6 +48,9 @@
 
       <!-- "Want to Add a Website?" Button -->
       <button id="add-website-btn">Want to Add a Website?</button>
+
+      <!-- Spinner for loading search -->
+      <div id="search-spinner" class="spinner"></div>
     </div>
 
     <!-- Modal for Adding a Website -->
@@ -40,6 +65,9 @@
         </form>
       </div>
     </div>
+
+    <!-- Spinner for loading website addition -->
+    <div id="add-website-spinner" class="spinner"></div>
 
     <!-- Search Results -->
     <div id="results"></div>
@@ -80,6 +108,10 @@
       // Function to fetch and display search results
       async function fetchResults() {
         if (!query) return; // If no query, don't fetch results
+        
+        // Show the spinner
+        document.getElementById('search-spinner').classList.add('loading');
+
         try {
           const response = await fetch(
             `/search?q=${encodeURIComponent(query)}&page=${page}&num_results=${numResults}`
@@ -87,6 +119,7 @@
           const data = await response.json();
 
           const resultsDiv = document.getElementById('results');
+          resultsDiv.innerHTML = ''; // Clear previous results
 
           if (data.results.length === 0) {
             resultsDiv.innerHTML = `<p>No results found for "<strong>${query}</strong>".</p>`;
@@ -121,6 +154,9 @@
           addPaginationControls(data.results.length);
         } catch (error) {
           console.error('Error fetching search results:', error);
+        } finally {
+          // Hide the spinner after loading results
+          document.getElementById('search-spinner').classList.remove('loading');
         }
       }
 
@@ -147,8 +183,11 @@
         e.preventDefault();
         const url = document.getElementById('website-url').value;
 
+        // Show the spinner while submitting the website
+        document.getElementById('add-website-spinner').classList.add('loading');
+
         try {
-          const response = await fetch('/post', {
+          const response = await fetch('/post', {‚
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -160,6 +199,9 @@
           modal.style.display = 'none'; // Close modal after submission
         } catch (error) {
           alert('Error adding website: ' + error.message);
+        } finally {
+          // Hide the spinner after submission
+          document.getElementById('add-website-spinner').classList.remove('loading');
         }
       };
     </script>
