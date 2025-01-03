@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Open Web Search</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="search-result-area">
+      <!-- Logo and Search Bar (visible in both main view and search view) -->
+      <a href="search.html">
+        <img class="search-logo-result" src="images/logo.png" alt="Logo" />
+      </a>
+
+      <form
+        class="search-form"
+        id="search-form"
+        action="search.html"
+        method="get"
+        autocomplete="off"
+      >
+        <div class="search-form-input">
+          <input type="text" name="search" id="search-input" value="" />
+        </div>
+      </form>
+
+      <!-- "Want to Add a Website?" Button -->
+      <button id="add-website-btn">Want to Add a Website?</button>
+    </div>
+
+    <!-- Modal for Adding a Website -->
+    <div id="add-website-modal" style="display:none;">
+      <div class="modal-content">
+        <h2>Add a New Website</h2>
+        <form id="add-website-form">
+          <label for="website-url">Website URL:</label>
+          <input type="url" id="website-url" name="url" required />
+          <button type="submit">Submit</button>
+          <button type="button" id="close-modal">Close</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Search Results -->
+    <div id="results"></div>
+    <div id="pagination"></div>
+
+    <script>
+      // Get the query parameter from the URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const query = urlParams.get('search');
+      document.getElementById('search-input').value = query || '';
+      let page = parseInt(urlParams.get('page')) || 1;
+      const numResults = 10;
+
+      // Add pagination controls
+      function addPaginationControls(totalResults) {
+        const paginationDiv = document.getElementById('pagination');
+        paginationDiv.innerHTML = ''; // Clear any existing pagination controls
+
+        if (page > 1) {
+          const prevLink = document.createElement('a');
+          prevLink.href = `search.html?search=${encodeURIComponent(
+            query
+          )}&page=${page - 1}`;
+          prevLink.textContent = 'Previous';
+          paginationDiv.appendChild(prevLink);
+        }
+
+        if (totalResults === numResults) {
+          const nextLink = document.createElement('a');
+          nextLink.href = `search.html?search=${encodeURIComponent(
+            query
+          )}&page=${page + 1}`;
+          nextLink.textContent = 'Next';
+          paginationDiv.appendChild(nextLink);
+        }
+      }
+
+      // Function to fetch and display search results
+      async function fetchResults() {
+        if (!query) return; // If no query, don't fetch results
+        try {
+          const response = await fetch(
+            `/search?q=${encodeURIComponent(query)}&page=${page}&num_results=${numResults}`
+          );
+          const data = await response.json();
+
+          const resultsDiv = document.getElementById('results');
+
+          if (data.results.length === 0) {
+            resultsDiv.innerHTML = `<p>No results found for "<strong>${query}</strong>".</p>`;
+            return;
+          }
+
+          data.results.forEach((result) => {
+            const resultDiv = document.createElement('div');
+            resultDiv.classList.add('result');
+
+            const titleLink = document.createElement('a');
+            titleLink.classList.add('result-title');
+            titleLink.href = result.url;
+            titleLink.textContent = result.title || result.url;
+
+            const urlDiv = document.createElement('div');
+            urlDiv.classList.add('result-url');
+            urlDiv.textContent = result.url;
+
+            const descriptionDiv = document.createElement('div');
+            descriptionDiv.classList.add('result-description');
+            descriptionDiv.textContent = result.description;
+
+            resultDiv.appendChild(titleLink);
+            resultDiv.appendChild(urlDiv);
+            resultDiv.appendChild(descriptionDiv);
+
+            resultsDiv.appendChild(resultDiv);
+          });
+
+          // Add pagination controls
+          addPaginationControls(data.results.length);
+        } catch (error) {
+          console.error('Error fetching search results:', error);
+        }
+      }
+
+      // Fetch and display results when the page loads if the query exists
+      if (query) {
+        fetchResults();
+      }
+
+      // Modal functionality
+      const addWebsiteBtn = document.getElementById('add-website-btn');
+      const modal = document.getElementById('add-website-modal');
+      const closeModalBtn = document.getElementById('close-modal');
+
+      addWebsiteBtn.onclick = () => {
+        modal.style.display = 'block';
+      };
+
+      closeModalBtn.onclick = () => {
+        modal.style.display = 'none';
+      };
+
+      // Handle website submission to /post
+      document.getElementById('add-website-form').onsubmit = async (e) => {
+        e.preventDefault();
+        const url = document.getElementById('website-url').value;
+
+        try {
+          const response = await fetch('/post', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ url }),
+          });
+          const data = await response.json();
+          alert(data.message || 'Website added successfully!');
+          modal.style.display = 'none'; // Close modal after submission
+        } catch (error) {
+          alert('Error adding website: ' + error.message);
+        }
+      };
+    </script>
+  </body>
+</html>
