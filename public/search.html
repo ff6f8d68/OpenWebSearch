@@ -21,36 +21,21 @@
         0% { transform: rotate(0deg); }
         100% { transform: rotate(360deg); }
       }
-
-      .loading {
-        display: block;
-      }
     </style>
+    
+    <script async src="https://cse.google.com/cse.js?cx=56bcab80e40e94508"></script>
   </head>
   <body>
     <div class="search-result-area">
-      <!-- Logo and Search Bar (visible in both main view and search view) -->
+      <!-- Logo and Search Bar -->
       <a href="search.html">
         <img class="search-logo-result" src="images/logo.png" alt="Logo" />
       </a>
-
-      <form
-        class="search-form"
-        id="search-form"
-        action="search.html"
-        method="get"
-        autocomplete="off"
-      >
-        <div class="search-form-input">
-          <input type="text" name="search" id="search-input" value="" />
-        </div>
-      </form>
-
+      
+      <div class="gcse-search"></div>
+      
       <!-- "Want to Add a Website?" Button -->
       <button id="add-website-btn">Want to Add a Website?</button>
-
-      <!-- Spinner for loading search -->
-      <div id="search-spinner" class="spinner"></div>
     </div>
 
     <!-- Modal for Adding a Website -->
@@ -69,99 +54,7 @@
     <!-- Spinner for loading website addition -->
     <div id="add-website-spinner" class="spinner"></div>
 
-    <!-- Search Results -->
-    <div id="results"></div>
-    <div id="pagination"></div>
-
     <script>
-      // Get the query parameter from the URL
-      const urlParams = new URLSearchParams(window.location.search);
-      const query = urlParams.get('search');
-      document.getElementById('search-input').value = query || '';
-      let page = parseInt(urlParams.get('page')) || 1;
-      const numResults = 10;
-
-      // Add pagination controls
-      function addPaginationControls(totalResults) {
-        const paginationDiv = document.getElementById('pagination');
-        paginationDiv.innerHTML = ''; // Clear any existing pagination controls
-
-        if (page > 1) {
-          const prevLink = document.createElement('a');
-          prevLink.href = `search.html?search=${encodeURIComponent(query)}&page=${page - 1}`;
-          prevLink.textContent = 'Previous';
-          paginationDiv.appendChild(prevLink);
-        }
-
-        if (totalResults === numResults) {
-          const nextLink = document.createElement('a');
-          nextLink.href = `search.html?search=${encodeURIComponent(query)}&page=${page + 1}`;
-          nextLink.textContent = 'Next';
-          paginationDiv.appendChild(nextLink);
-        }
-      }
-
-      // Function to fetch and display search results
-      async function fetchResults() {
-        if (!query) return; // If no query, don't fetch results
-        
-        // Show the spinner
-        document.getElementById('search-spinner').classList.add('loading');
-
-        try {
-          const response = await fetch(
-            `/search?q=${encodeURIComponent(query)}&page=${page}&num_results=${numResults}`
-          );
-          const data = await response.json();
-
-          const resultsDiv = document.getElementById('results');
-          resultsDiv.innerHTML = ''; // Clear previous results
-
-          if (data.results.length === 0) {
-            resultsDiv.innerHTML = `<p>No results found for "<strong>${query}</strong>".</p>`;
-            return;
-          }
-
-          // Display results with title and description
-          data.results.forEach((result) => {
-            const resultDiv = document.createElement('div');
-            resultDiv.classList.add('result');
-
-            const titleLink = document.createElement('a');
-            titleLink.classList.add('result-title');
-            titleLink.href = result.url;
-            titleLink.textContent = result.title; // Display the title
-
-            const urlDiv = document.createElement('div');
-            urlDiv.classList.add('result-url');
-            urlDiv.textContent = result.url; // Display the URL
-
-            const descriptionDiv = document.createElement('div');
-            descriptionDiv.classList.add('result-description');
-            descriptionDiv.textContent = result.description || 'No description available'; // Display the description
-
-            resultDiv.appendChild(titleLink);
-            resultDiv.appendChild(urlDiv);
-            resultDiv.appendChild(descriptionDiv);
-
-            resultsDiv.appendChild(resultDiv);
-          });
-
-          // Add pagination controls
-          addPaginationControls(data.results.length);
-        } catch (error) {
-          console.error('Error fetching search results:', error);
-        } finally {
-          // Hide the spinner after loading results
-          document.getElementById('search-spinner').classList.remove('loading');
-        }
-      }
-
-      // Fetch and display results when the page loads if the query exists
-      if (query) {
-        fetchResults();
-      }
-
       // Modal functionality
       const addWebsiteBtn = document.getElementById('add-website-btn');
       const modal = document.getElementById('add-website-modal');
